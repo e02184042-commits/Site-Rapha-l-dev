@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphaël - Développeur Web à lomé, Togo</title>
+    <meta name="description" content="Raphaël-dev, développeur web à Tsévié. Je crée des outils simples qui font gagner du temps aux églises, commerçants et PME du Togo.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header {
+            background: #0a4a8c;
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+            object-fit: cover;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .slogan { font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px; }
+        .cta-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .cta-btn:hover { background: #1ebe5d; }
+
+        /* Sections */
+        section { padding: 60px 0; }
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #0a4a8c;
+            margin-bottom: 40px;
+        }
+        
+        /* Services */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .card h3 { color: #0a4a8c; margin-bottom: 15px; font-size: 1.3rem; }
+        .card p { color: #666; }
+
+        /* Portfolio */
+        .portfolio { background: white; }
+        .projet {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0a4a8c;
+        }
+        .projet h3 { margin-bottom: 10px; }
+        .tag {
+            display: inline-block;
+            background: #0a4a8c;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        /* Contact */
+        .contact { text-align: center; }
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            display: inline-block;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header>
+        <div class="container">
+            <!-- METS LE LIEN DE TA PHOTO ICI -->
+            <img src="VEGA_1780291823232.jpg" alt="Raphaël Développeur Web" class="logo">
+            <h1>Raphaël</h1>
+            <p class="slogan">Développeur Web à lomé 🇹🇬<br>Je crée des outils qui vous font gagner du temps.</p>
+            <a href="https://wa.me/22878952366?text=Salut%20Raphaël,%20j'ai%20vu%20ton%20site.%20Parlons%20de%20mon%20projet" class="cta-btn">📱 Me Contacter sur WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section>
+        <div class="container">
+            <h2>Ce que je fais pour vous</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>⚡ Outils Métier</h3>
+                    <p>Marre d'Excel et des cahiers ? Je code des petits outils web qui calculent, organisent et envoient vos rapports en 1 clic. 100% sur téléphone.</p>
+                </div>
+                <div class="card">
+                    <h3>⛪ Solutions pour Églises</h3>
+                    <p>Gestion des dons, annonces de messe, listes de fidèles. Des outils simples pour que les curés et pasteurs se concentrent sur l'essentiel.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Site Vitrine Simple</h3>
+                    <p>Une page pro pour votre boutique, ONG ou paroisse. Pour être visible sur Google et montrer que vous êtes sérieux. Paiement unique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>Projets Récents</h2>
+            
+            <div class="projet">
+                <h3>Outil de Gestion des Dons</h3>
+                <p>Client : Paroisse Saint-Michel de Tové<br>
+                Résultat : Le trésorier gagne 20min chaque dimanche. Rapport WhatsApp généré automatiquement.</p>
+                <span class="tag">Outil Web</span>
+            </div>
+
+            <div class="projet">
+                <h3>Générateur d'Annonces de Messe</h3>
+                <p>Client : Paroisse Saint-Michel de Tové<br>
+                Résultat : Le curé crée l'annonce WhatsApp pour 200 fidèles en moins d'1 minute.</p>
+                <span class="tag">Outil Web</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="container">
+            <h2>On travaille ensemble ?</h2>
+            <div class="contact-box">
+                <p style="font-size: 18px; margin-bottom: 20px;">Expliquez-moi votre problème.<br>Je vous dis si je peux coder la solution.</p>
+                <a href="https://wa.me/22878952366?text=Salut%20Raphaël,%20j'ai%20un%20projet%20pour%20toi" class="cta-btn">💬 Discuter sur WhatsApp</a>
+                <p style="margin-top: 20px; color: #666;">Basé à lomé, je travaille pour tout le Togo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Raphaël - Développeur Web Togo | "La technologie au service de l'efficacité"</p>
+        </div>
+    </footer>
+
+</body>
+</html>
